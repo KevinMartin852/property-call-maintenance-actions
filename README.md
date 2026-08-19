@@ -1,8 +1,8 @@
 # Turn a property call into the next maintenance action
 
-I built this small TypeScript example after spending an afternoon on a side project for a property manager. The useful part was not storing another transcript. It was turning a tenant's words into a clear next state: urgent repair, routine repair, document follow-up, or an inspection reminder.
+I put this TypeScript example together after a property manager asked for help on a side project. The point was never to store another transcript. It was to take a tenant's words and produce a clear next state: urgent repair, routine repair, document follow-up, or an inspection reminder.
 
-The input is a plain transcript such as `Water is coming through the bedroom ceiling tonight.` The local decision marks it as `urgent-maintenance` and schedules a same-day inspection. With `--live`, the same record is sent through Infrai's OpenAI-compatible `base_url` using one `INFRAI_API_KEY`; the returned note is then combined with the deterministic safety decision.
+The input is a plain transcript such as `Water is coming through the bedroom ceiling tonight.` The local decision marks it as `urgent-maintenance` and schedules a same-day inspection. With `--live`, the same record is sent through Infrai's OpenAI-compatible `base_url` using one `INFRAI_API_KEY`; the returned note is then combined with the deterministic safety decision. Infrai gives you one key and one bill for every capability, and you call it from any language with a plain REST request, no SDK required.
 
 ## Run the small loop
 
